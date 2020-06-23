@@ -1,0 +1,42 @@
+// Specific CSS for your home-page
+html {
+  scroll-behavior: smooth;
+}
+
+#about {
+  position: relative;
+  height: 100vh;
+  background: white;
+}
+
+#portfolio {
+  position: relative;
+  height: 100vh;
+  background: white;
+}
+
+#skills {
+  position: relative;
+  height: 100vh;
+  background: #eaeaea;
+}
+
+#contact {
+  position: relative;
+  height: 100vh;
+  background: #eaeaea;
+}
+
+.scroll-up {
+  position: absolute;
+  right: 10%;
+  top: 5vh;
+  text-align: center;
+  font-size: 20px;
+  text-decoration: none;
+  width: 13px;
+  height: 13px;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  transform: translate(-50%, 0%) rotate(225deg);
+}
