@@ -8,35 +8,24 @@ html {
 
 #about {
   position: relative;
-  height: 100vh;
   background: white;
-  background-image: url(bg1.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 #portfolio {
   position: relative;
-  height: 100vh;
-  background-image: url(bg1.jpg);
-  background-size: cover;
-  background-position: center;
+  background: white;
 }
 
 #skills {
   position: relative;
-  height: 100vh;
-  background-image: url(bg2.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 #contact {
   position: relative;
-  height: 100vh;
-  background-image: url(bg2.jpg);
-  background-size: cover;
-  background-position: center;
+}
+
+.block {
+  display: block;
 }
 
 .scroll-up {
@@ -75,8 +64,6 @@ html {
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   padding: 16px;
   margin: 32px;
-  max-width: 800px;
-  min-width: 50%;
 }
 
 .main-container {
@@ -84,7 +71,48 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   width: 70%;
-  margin: 16px auto;
+  margin: 32px auto;
+}
+
+#about-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 16px;
+  margin-top: 32px;
+  margin-bottom: 150px;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  #about-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 768px) {
+  #about-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  #about-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+.about-text {
+  text-align: justify;
+  padding: 16px;
+}
+
+.profile_pic {
+  background-image: url(profile_pic.jpeg);
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+  width: 300px;
+  height: 500px;
 }
